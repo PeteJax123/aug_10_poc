@@ -24,8 +24,8 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "June-TFC-Org-THREE"
-  location = "canadaeast"
+  name     = var.rg_name
+  location = var.rg_location
 
   tags = {
     environment = "Production"
